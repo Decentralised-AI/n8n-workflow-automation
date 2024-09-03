@@ -36,6 +36,7 @@ services:
       - EXECUTIONS_MODE=queue
       - QUEUE_BULL_REDIS_HOST=redis
       - QUEUE_HEALTH_CHECK_ACTIVE=true
+      - N8N_CONCURRENCY_PRODUCTION_LIMIT=10
       # DB config
       - DB_TYPE=postgresdb
       - DB_POSTGRESDB_HOST=postgres
@@ -65,6 +66,7 @@ services:
       - EXECUTIONS_MODE=queue
       - QUEUE_BULL_REDIS_HOST=redis
       - QUEUE_HEALTH_CHECK_ACTIVE=true
+      - N8N_CONCURRENCY_PRODUCTION_LIMIT=10
       # DB config
       - DB_TYPE=postgresdb
       - DB_POSTGRESDB_HOST=postgres
